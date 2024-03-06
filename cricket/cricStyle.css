@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin-top: 15px;
+    padding: 0;
+}
+
+
+
+h1 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h2{
+    /* background-color: white; */
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    width: 85%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #d9d8d7;
+    box-shadow: 5px 5px 10px rgb(205, 195, 225);
+    cursor: pointer;
+}
+
+.print-button {
+    text-align: center;
+}
+
+.print-button button {
+    background-color: #362c22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.print-button button:hover {
+    background-color: #9c6f40;
+    color: black;
+}
+.request {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+#remark{  
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.remark{
+    display: flex;
+    justify-content: center;  
+}
+#loading-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .loading-spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
